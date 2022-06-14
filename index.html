@@ -20,18 +20,44 @@
       </div>
       <div class="intro">
          <div class="intro__saying"><h2>Practicing makes you better than yesterday</h2></div>
-         <div class="intro__explain"><h3>"It takes 10,000 hours of intensive practice to achieve mastery of complex skills and materials,<br> like playing the violin or getting as good as Bill Gates at computer programming." -Gladwell</h3></div>
+         <div class="intro__explain"><h4>"It takes 10,000 hours of intensive practice to achieve mastery of complex skills and materials,<br> like playing the violin or getting as good as Bill Gates at computer programming." -Gladwell</h4></div>
       </div>
       <div class="inputs">
          <div class="field">
-            <p>I will be an expert of</p>
+            <h3>I want to be an expert of</h3>
             <input type="text" id="field__value" placeholder="ex) Programmer">
-            
+         </div>
+         <div class="field__time">
+            <h3>So, I will practice for</h3>
+            <input type="text" id="feild__time--value" placeholder="ex)5">
+            <h3>hours everyday.</h3>
          </div>
       </div>
-      <div class="start"></div>
-      <div class="result_loading"></div>
-      <div class="result"></div>
+      <div class="start">
+         <button class="start__btn"><h3>How long time should I work in a day to fill 10,000 hours?</h3></button>
+      </div>
+      <div class="result_loading">
+         <div class="img__wrap">
+            <img src="img/favicon.png" alt="loading">
+         </div>
+      </div>
+      <div class="result">
+         <div class="result__wrap">
+            <div>
+               You have to train about for <span class="time__result"></span> days
+            </div>
+            <div>
+               to be an expert of <span class="field__result"></span>.
+            </div>
+         </div>
+         <div class="buttons">
+            <div class="go">
+               <button class="modal__btn">Let`s go!</button>
+            </div>
+            <div class="share"><button class="share__btn">Share</button>
+            </div>
+         </div>
+      </div>
      </div>
    </section>
    <section id="modal"></section>
