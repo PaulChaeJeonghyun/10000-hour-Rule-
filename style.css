@@ -1,16 +1,13 @@
 /* font-family: 'Kdam Thmor Pro', sans-serif; */
 
 @keyframes rotate {
-   from {
-      transform: rotate(0deg);
-   }
-   to {
+   100% {
       transform: rotate(360deg);
    }
 }
 
 html, body {
-   width: 100%;
+   /* width: 100%; */
    height: 100%;
 }
 
@@ -21,16 +18,16 @@ body {
 }
 
 /* main contant */
-#contents {
+/* #contents {
    display: flex;
    justify-content: center;
-}
+} */
 
 .wrapper {
-   width: 100%;
+   /* width: 100%;
    height: 100%;
    display: flex;
-   flex-direction: column;
+   flex-direction: column; */
    margin-top: 50px;
 }
 
@@ -93,8 +90,8 @@ body {
 }
 
 button {
-   display: flex;
-   align-items: center;
+   /* display: flex;
+   align-items: center; */
    font-size: 25px; 
    font-weight: bold;
    color: #5b2386;
@@ -118,8 +115,7 @@ button {
 
 /* Result loading */
 .result_loading {
-   /* display: none; */
-   display: flex;
+   display: none;
    justify-content: center;
    margin-bottom: 80px;
 }
@@ -130,14 +126,14 @@ button {
 }
 
 .result_loading .img__wrap img {
-   width: 200%;
+   width: 100%;
    height: auto;
    animation: rotate 1.1s infinite linear;
 }
 
 /* Result */
 .result {
-   /* display: none; */
+   display: none;
    flex-direction: column;
    align-items: center;
    line-height: 1.5;

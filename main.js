@@ -8,18 +8,18 @@ const loading = document.querySelector(".result_loading");
 
 function calculator(){
       const fieldValue = document.querySelector("#field__value");
-      let timevalue = document.querySelector("#feild__time--value");
-      let timevalue_int = Number(timeValue.value);
+      const timevalue = document.querySelector("#feild__time--value");
+      const timevalue_int = Number(timevalue.value);
 
       const fieldResult = document.querySelector(".feild__result")
       const timeResult = document.querySelector(".time__result");
 
       if(fieldValue.value == ""){
-         alert('Nothing inputs');
+         alert('Nothing inputs in Field');
          fieldValue.focus();
          return false;
       } else if(timevalue.value == ""){
-         alert('Nothing inputs');
+         alert('Nothing inputs in Time');
          timevalue.focus();
          return false;
       } else if(timevalue_int > 24) {
@@ -31,10 +31,10 @@ function calculator(){
       loading.style.display = 'flex';
 
       setTimeout(function(){
-         loading.style.display = 'none'
-         result.style.display = 'flex';
          fieldResult.innerText = fieldValue.value;
          timeResult.innerText = parseInt((10000/timevalue_int),10);
+         loading.style.display = 'none'
+         result.style.display = 'flex';
       }, 1800);
 }
 
