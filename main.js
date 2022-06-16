@@ -1,5 +1,5 @@
-const startbutton = document.querySelector(".modal__btn");
-const openbutton = document.querySelector(".start__btn");
+const startbutton = document.querySelector(".start__btn");
+const openbutton = document.querySelector(".modal__btn");
 const closebutton = document.querySelector(".close__btn");
 const sharebutton = document.querySelector(".share__btn");
 const result = document.querySelector(".result");
@@ -8,10 +8,10 @@ const loading = document.querySelector(".result_loading");
 
 function calculator(){
       const fieldValue = document.querySelector("#field__value");
-      const timevalue = document.querySelector("#feild__time--value");
+      const timevalue = document.querySelector("#field__time--value");
       const timevalue_int = Number(timevalue.value);
 
-      const fieldResult = document.querySelector(".feild__result");
+      const fieldResult = document.querySelector(".field__result");
       const timeResult = document.querySelector(".time__result");
 
       if(fieldValue.value == ""){
@@ -61,6 +61,6 @@ function copyUrl(){
 }
 
 sharebutton.addEventListener('click',copyUrl);
-startbutton.addEventListener('click',openModal);
+openbutton.addEventListener('click',openModal);
 closebutton.addEventListener('click',closeModal);
-openbutton.addEventListener('click',calculator);
+startbutton.addEventListener('click',calculator);

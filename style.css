@@ -153,6 +153,7 @@ button {
 }
 
 .result span {
+   /* display: flex; */
    padding: 0 20px;
    font-size: 70px;
 }
